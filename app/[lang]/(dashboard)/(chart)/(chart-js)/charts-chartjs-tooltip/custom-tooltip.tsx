@@ -29,22 +29,20 @@ ChartJS.register(
   PointElement
 );
 
-const footer = (tooltipItems: TooltipItem<'line'>[]) => {
-  let sum = 0;
-
-  tooltipItems.forEach(function (tooltipItem) {
-    sum += tooltipItem.parsed.y;
-  });
-  return "Sum: " + sum;
-};
+const footer = (tooltipItems: TooltipItem<"line">[]) =>
+  "Sum: " + tooltipItems.reduce((sum, t) => sum + (t.parsed?.y ?? 0), 0);
 
 const CustomTooltip = ({ height = 350 }) => {
   const { theme: config, setTheme: setConfig } = useThemeStore();
   const { theme: mode } = useTheme();
   const theme = themes.find((theme) => theme.name === config);
 
-  const hslWarning = `hsla(${theme?.cssVars[mode === "dark" ? "dark" : "light"].warning})`;
-  const hslInfo = `hsla(${theme?.cssVars[mode === "dark" ? "dark" : "light"].info})`;
+  const hslWarning = `hsla(${
+    theme?.cssVars[mode === "dark" ? "dark" : "light"].warning
+  })`;
+  const hslInfo = `hsla(${
+    theme?.cssVars[mode === "dark" ? "dark" : "light"].info
+  })`;
 
   const data: any = {
     labels: ["January", "February", "March", "April", "May", "Jun", "July"],
@@ -63,16 +61,18 @@ const CustomTooltip = ({ height = 350 }) => {
       },
     ],
   };
+
   const options: any = {
     responsive: true,
     plugins: {
       legend: {
         position: "top",
         labels: {
-          color: `hsl(${theme?.cssVars[
+          color: `hsl(${
+            theme?.cssVars[
               mode === "dark" || mode === "system" ? "dark" : "light"
             ].chartLabel
-            })`,
+          })`,
         },
       },
       tooltip: {
@@ -85,32 +85,35 @@ const CustomTooltip = ({ height = 350 }) => {
       y: {
         grid: {
           drawTicks: false,
-          color: `hsl(${theme?.cssVars[
+          color: `hsl(${
+            theme?.cssVars[
               mode === "dark" || mode === "system" ? "dark" : "light"
             ].chartGird
-            })`,
+          })`,
         },
         ticks: {
-          color: `hsl(${theme?.cssVars[
+          color: `hsl(${
+            theme?.cssVars[
               mode === "dark" || mode === "system" ? "dark" : "light"
             ].chartLabel
-            })`,
+          })`,
         },
       },
       x: {
         grid: {
           drawTicks: false,
-          color: `hsl(${theme?.cssVars[
+          color: `hsl(${
+            theme?.cssVars[
               mode === "dark" || mode === "system" ? "dark" : "light"
             ].chartGird
-            })`,
+          })`,
         },
-
         ticks: {
-          color: `hsl(${theme?.cssVars[
+          color: `hsl(${
+            theme?.cssVars[
               mode === "dark" || mode === "system" ? "dark" : "light"
             ].chartLabel
-            })`,
+          })`,
         },
       },
     },
