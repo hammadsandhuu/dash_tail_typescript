@@ -2026,8 +2026,7 @@ export const menusConfig = {
         title: "Dashboard",
         icon: DashBoard,
         href: "/dashboard",
-       
-        
+
         child: [
           {
             title: "Analytics",
@@ -2216,7 +2215,7 @@ export const menusConfig = {
         title: "Utility",
         icon: Diamond,
         href: "#",
-        
+
         child: [
           {
             title: "Blank Page",
@@ -2236,7 +2235,7 @@ export const menusConfig = {
         title: "Invoice",
         icon: Files,
         href: "#",
-        
+
         child: [
           {
             title: "Create Invoice",
@@ -2257,7 +2256,7 @@ export const menusConfig = {
         title: "Error",
         icon: Error,
         href: "#",
-        
+
         child: [
           {
             title: "Error 401",
@@ -2636,370 +2635,370 @@ export const menusConfig = {
           },
         ],
       },
-      {
-        title: "Diagram",
-        icon: Chart,
-        child: [
-          {
-            title: "Overview",
-            href: "/diagram-overview",
-          },
-          {
-            title: "Organization Tree",
-            href: "/organization-diagram",
-          },
-          {
-            title: "Update Node",
-            href: "/diagram-updating",
-          },
-          {
-            title: "Add Node",
-            href: "/diagram-add-node",
-          },
-          {
-            title: "Horizontal Flow",
-            href: "/horizontal-diagram",
-          },
-          {
-            title: "Dagree Tree",
-            href: "/diagram-dagree-tree",
-          },
-          {
-            title: "Download Diagram",
-            href: "/download-diagram",
-          },
-          {
-            title: "With Minimap",
-            href: "/diagram-with-minimap",
-          },
-          {
-            title: "With Background",
-            href: "/diagram-with-background",
-          },
-          {
-            title: "Panel Position",
-            href: "/diagram-panel-position",
-          },
-        ],
-      },
-      {
-        title: "Chart",
-        icon: ChartArea,
-        child: [
-          {
-            title: "Apex Chart",
-            icon: ChartBar,
-            multi_menu: [
-              {
-                title: "Line",
-                href: "/charts-appex-line",
-                icon: "heroicons:information-circle",
-              },
-              {
-                title: "Area",
-                href: "/charts-appex-area",
-                icon: "heroicons:information-circle",
-              },
-              {
-                title: "Column",
-                href: "/charts-appex-column",
-                icon: "heroicons:information-circle",
-              },
-              {
-                title: "Bar",
-                href: "/charts-appex-bar",
-                icon: "heroicons:information-circle",
-              },
-              {
-                title: "Combo/Mixed",
-                href: "/charts-appex-combo",
-                icon: "heroicons:information-circle",
-              },
-              {
-                title: "Range Area",
-                href: "/charts-appex-range",
-                icon: "heroicons:information-circle",
-              },
-              {
-                title: "Timeline",
-                href: "/charts-appex-timeline",
-                icon: "heroicons:information-circle",
-              },
-              {
-                title: "Funnel",
-                href: "/charts-appex-funnel",
-                icon: "heroicons:information-circle",
-              },
-              {
-                title: "Candle Stick",
-                href: "/charts-appex-candlestick",
-                icon: "heroicons:information-circle",
-              },
-              {
-                title: "Boxplot",
-                href: "/charts-appex-boxplot",
-                icon: "heroicons:information-circle",
-              },
-              {
-                title: "Pie",
-                href: "/charts-appex-pie",
-                icon: "heroicons:information-circle",
-              },
-              {
-                title: "Radar",
-                href: "/charts-appex-radar",
-                icon: "heroicons:information-circle",
-              },
-              {
-                title: "Polar Area",
-                href: "/charts-appex-polararea",
-                icon: "heroicons:information-circle",
-              },
-              {
-                title: "Radial Bars",
-                href: "/charts-appex-radialbars",
-                icon: "heroicons:information-circle",
-              },
-              {
-                title: "Bubble",
-                href: "/charts-appex-bubble",
-                icon: "heroicons:information-circle",
-              },
-              {
-                title: "Scatter",
-                href: "/charts-appex-scatter",
-                icon: "heroicons:information-circle",
-              },
-              {
-                title: "Heatmap",
-                href: "/charts-appex-heatmap",
-                icon: "heroicons:information-circle",
-              },
-              {
-                title: "Treemap",
-                href: "/charts-appex-treemap",
-                icon: "heroicons:information-circle",
-              },
-            ],
-          },
-          {
-            title: "Re Chart",
-            icon: PretentionChartLine,
-            multi_menu: [
-              {
-                title: "Line",
-                href: "/charts-rechart-line",
-                icon: "heroicons:information-circle",
-              },
-              {
-                title: "Area",
-                href: "/charts-rechart-area",
-                icon: "heroicons:information-circle",
-              },
-              {
-                title: "Bar",
-                href: "/charts-rechart-bar",
-                icon: "heroicons:information-circle",
-              },
-              {
-                title: "Scatter",
-                href: "/charts-rechart-scatter",
-                icon: "heroicons:information-circle",
-              },
-              {
-                title: "Composed",
-                href: "/charts-rechart-composed",
-                icon: "heroicons:information-circle",
-              },
-              {
-                title: "Pie",
-                href: "/charts-rechart-pie",
-                icon: "heroicons:information-circle",
-              },
-              {
-                title: "Radar",
-                href: "/charts-rechart-radar",
-                icon: "heroicons:information-circle",
-              },
-              {
-                title: "Radial Bar",
-                href: "/charts-rechart-radialbar",
-                icon: "heroicons:information-circle",
-              },
-              {
-                title: "Tree Map",
-                href: "/charts-rechart-treemap",
-                icon: "heroicons:information-circle",
-              },
-            ],
-          },
-          {
-            title: "Chart js",
-            icon: PretentionChartLine2,
-            multi_menu: [
-              {
-                title: "Bar",
-                href: "/charts-chartjs-bar",
-                icon: "heroicons:information-circle",
-              },
-              {
-                title: "Line",
-                href: "/charts-chartjs-line",
-                icon: "heroicons:information-circle",
-              },
-              {
-                title: "Area",
-                href: "/charts-chartjs-area",
-                icon: "heroicons:information-circle",
-              },
-              {
-                title: "Other",
-                href: "/charts-chartjs-other",
-                icon: "heroicons:information-circle",
-              },
-              {
-                title: "Scales",
-                href: "/charts-chartjs-scales",
-                icon: "heroicons:information-circle",
-              },
-              {
-                title: "Scale Options",
-                href: "/charts-chartjs-scaleoptions",
-                icon: "heroicons:information-circle",
-              },
-              {
-                title: "Legend",
-                href: "/charts-chartjs-legend",
-                icon: "heroicons:information-circle",
-              },
-              {
-                title: "Title",
-                href: "/charts-chartjs-title",
-                icon: "heroicons:information-circle",
-              },
-              {
-                title: "Tooltip",
-                href: "/charts-chartjs-tooltip",
-                icon: "heroicons:information-circle",
-              },
-              {
-                title: "Scriptable Options",
-                href: "/charts-chartjs-scriptable",
-                icon: "heroicons:information-circle",
-              },
-              {
-                title: "Animations",
-                href: "/charts-chartjs-animations",
-                icon: "heroicons:information-circle",
-              },
-            ],
-          },
-          {
-            title: "Unovis",
-            icon: PretentionChartLine,
-            multi_menu: [
-              {
-                title: "Line",
-                href: "/charts-unovis-line",
-                icon: "heroicons:information-circle",
-              },
-              {
-                title: "Bar",
-                href: "/charts-unovis-bar",
-                icon: "heroicons:information-circle",
-              },
-              {
-                title: "Area",
-                href: "/charts-unovis-area",
-                icon: "heroicons:information-circle",
-              },
-              {
-                title: "Scatter",
-                href: "/charts-unovis-scatter",
-                icon: "heroicons:information-circle",
-              },
-            ],
-          },
-        ],
-      },
-      {
-        title: "Maps",
-        icon: Map,
-        child: [
-          {
-            title: "Vector",
-            icon: Pointer,
-            href: "/maps-vector",
-          },
-          {
-            title: "React Leaflet",
-            icon: Map2,
-            href: "/map-react-leaflet",
-          },
-          {
-            title: "Unovis Map",
-            icon: Map,
-            multi_menu: [
-              {
-                title: "Leaflet Map",
-                href: "/map-unovis-leaflet",
-              },
-              {
-                title: "Leaflet Flow",
-                href: "/map-unovis-flow",
-              },
-              {
-                title: "Leaflet Advance",
-                href: "/map-unovis-advance",
-              },
-            ],
-          },
-        ],
-      },
-      {
-        title: "Icons",
-        icon: Icons,
-        child: [
-          {
-            title: "Hero Icons",
-            icon: Heroicon,
-            href: "/icons-iconify",
-          },
-          {
-            title: "Lucide Icons",
-            icon: LucideIcon,
-            href: "/icons-lucide",
-          },
-          {
-            title: "Custom Icons",
-            icon: CustomIcon,
-            href: "/icons-custom",
-          },
-        ],
-      },
-      {
-        title: "Multi Level",
-        icon: MenuBar,
-        child: [
-          {
-            title: "Level 1.1",
-            href: "#",
-          },
-          {
-            title: "Level 2",
-            multi_menu: [
-              {
-                title: "Level 2.1",
-                href: "#",
-              },
-              {
-                title: "Level 2.2",
-                href: "#",
-              },
-            ],
-          },
-        ],
-      },
+      // {
+      //   title: "Diagram",
+      //   icon: Chart,
+      //   child: [
+      //     {
+      //       title: "Overview",
+      //       href: "/diagram-overview",
+      //     },
+      //     {
+      //       title: "Organization Tree",
+      //       href: "/organization-diagram",
+      //     },
+      //     {
+      //       title: "Update Node",
+      //       href: "/diagram-updating",
+      //     },
+      //     {
+      //       title: "Add Node",
+      //       href: "/diagram-add-node",
+      //     },
+      //     {
+      //       title: "Horizontal Flow",
+      //       href: "/horizontal-diagram",
+      //     },
+      //     {
+      //       title: "Dagree Tree",
+      //       href: "/diagram-dagree-tree",
+      //     },
+      //     {
+      //       title: "Download Diagram",
+      //       href: "/download-diagram",
+      //     },
+      //     {
+      //       title: "With Minimap",
+      //       href: "/diagram-with-minimap",
+      //     },
+      //     {
+      //       title: "With Background",
+      //       href: "/diagram-with-background",
+      //     },
+      //     {
+      //       title: "Panel Position",
+      //       href: "/diagram-panel-position",
+      //     },
+      //   ],
+      // },
+      // {
+      //   title: "Chart",
+      //   icon: ChartArea,
+      //   child: [
+      //     {
+      //       title: "Apex Chart",
+      //       icon: ChartBar,
+      //       multi_menu: [
+      //         {
+      //           title: "Line",
+      //           href: "/charts-appex-line",
+      //           icon: "heroicons:information-circle",
+      //         },
+      //         {
+      //           title: "Area",
+      //           href: "/charts-appex-area",
+      //           icon: "heroicons:information-circle",
+      //         },
+      //         {
+      //           title: "Column",
+      //           href: "/charts-appex-column",
+      //           icon: "heroicons:information-circle",
+      //         },
+      //         {
+      //           title: "Bar",
+      //           href: "/charts-appex-bar",
+      //           icon: "heroicons:information-circle",
+      //         },
+      //         {
+      //           title: "Combo/Mixed",
+      //           href: "/charts-appex-combo",
+      //           icon: "heroicons:information-circle",
+      //         },
+      //         {
+      //           title: "Range Area",
+      //           href: "/charts-appex-range",
+      //           icon: "heroicons:information-circle",
+      //         },
+      //         {
+      //           title: "Timeline",
+      //           href: "/charts-appex-timeline",
+      //           icon: "heroicons:information-circle",
+      //         },
+      //         {
+      //           title: "Funnel",
+      //           href: "/charts-appex-funnel",
+      //           icon: "heroicons:information-circle",
+      //         },
+      //         {
+      //           title: "Candle Stick",
+      //           href: "/charts-appex-candlestick",
+      //           icon: "heroicons:information-circle",
+      //         },
+      //         {
+      //           title: "Boxplot",
+      //           href: "/charts-appex-boxplot",
+      //           icon: "heroicons:information-circle",
+      //         },
+      //         {
+      //           title: "Pie",
+      //           href: "/charts-appex-pie",
+      //           icon: "heroicons:information-circle",
+      //         },
+      //         {
+      //           title: "Radar",
+      //           href: "/charts-appex-radar",
+      //           icon: "heroicons:information-circle",
+      //         },
+      //         {
+      //           title: "Polar Area",
+      //           href: "/charts-appex-polararea",
+      //           icon: "heroicons:information-circle",
+      //         },
+      //         {
+      //           title: "Radial Bars",
+      //           href: "/charts-appex-radialbars",
+      //           icon: "heroicons:information-circle",
+      //         },
+      //         {
+      //           title: "Bubble",
+      //           href: "/charts-appex-bubble",
+      //           icon: "heroicons:information-circle",
+      //         },
+      //         {
+      //           title: "Scatter",
+      //           href: "/charts-appex-scatter",
+      //           icon: "heroicons:information-circle",
+      //         },
+      //         {
+      //           title: "Heatmap",
+      //           href: "/charts-appex-heatmap",
+      //           icon: "heroicons:information-circle",
+      //         },
+      //         {
+      //           title: "Treemap",
+      //           href: "/charts-appex-treemap",
+      //           icon: "heroicons:information-circle",
+      //         },
+      //       ],
+      //     },
+      //     {
+      //       title: "Re Chart",
+      //       icon: PretentionChartLine,
+      //       multi_menu: [
+      //         {
+      //           title: "Line",
+      //           href: "/charts-rechart-line",
+      //           icon: "heroicons:information-circle",
+      //         },
+      //         {
+      //           title: "Area",
+      //           href: "/charts-rechart-area",
+      //           icon: "heroicons:information-circle",
+      //         },
+      //         {
+      //           title: "Bar",
+      //           href: "/charts-rechart-bar",
+      //           icon: "heroicons:information-circle",
+      //         },
+      //         {
+      //           title: "Scatter",
+      //           href: "/charts-rechart-scatter",
+      //           icon: "heroicons:information-circle",
+      //         },
+      //         {
+      //           title: "Composed",
+      //           href: "/charts-rechart-composed",
+      //           icon: "heroicons:information-circle",
+      //         },
+      //         {
+      //           title: "Pie",
+      //           href: "/charts-rechart-pie",
+      //           icon: "heroicons:information-circle",
+      //         },
+      //         {
+      //           title: "Radar",
+      //           href: "/charts-rechart-radar",
+      //           icon: "heroicons:information-circle",
+      //         },
+      //         {
+      //           title: "Radial Bar",
+      //           href: "/charts-rechart-radialbar",
+      //           icon: "heroicons:information-circle",
+      //         },
+      //         {
+      //           title: "Tree Map",
+      //           href: "/charts-rechart-treemap",
+      //           icon: "heroicons:information-circle",
+      //         },
+      //       ],
+      //     },
+      //     {
+      //       title: "Chart js",
+      //       icon: PretentionChartLine2,
+      //       multi_menu: [
+      //         {
+      //           title: "Bar",
+      //           href: "/charts-chartjs-bar",
+      //           icon: "heroicons:information-circle",
+      //         },
+      //         {
+      //           title: "Line",
+      //           href: "/charts-chartjs-line",
+      //           icon: "heroicons:information-circle",
+      //         },
+      //         {
+      //           title: "Area",
+      //           href: "/charts-chartjs-area",
+      //           icon: "heroicons:information-circle",
+      //         },
+      //         {
+      //           title: "Other",
+      //           href: "/charts-chartjs-other",
+      //           icon: "heroicons:information-circle",
+      //         },
+      //         {
+      //           title: "Scales",
+      //           href: "/charts-chartjs-scales",
+      //           icon: "heroicons:information-circle",
+      //         },
+      //         {
+      //           title: "Scale Options",
+      //           href: "/charts-chartjs-scaleoptions",
+      //           icon: "heroicons:information-circle",
+      //         },
+      //         {
+      //           title: "Legend",
+      //           href: "/charts-chartjs-legend",
+      //           icon: "heroicons:information-circle",
+      //         },
+      //         {
+      //           title: "Title",
+      //           href: "/charts-chartjs-title",
+      //           icon: "heroicons:information-circle",
+      //         },
+      //         {
+      //           title: "Tooltip",
+      //           href: "/charts-chartjs-tooltip",
+      //           icon: "heroicons:information-circle",
+      //         },
+      //         {
+      //           title: "Scriptable Options",
+      //           href: "/charts-chartjs-scriptable",
+      //           icon: "heroicons:information-circle",
+      //         },
+      //         {
+      //           title: "Animations",
+      //           href: "/charts-chartjs-animations",
+      //           icon: "heroicons:information-circle",
+      //         },
+      //       ],
+      //     },
+      //     {
+      //       title: "Unovis",
+      //       icon: PretentionChartLine,
+      //       multi_menu: [
+      //         {
+      //           title: "Line",
+      //           href: "/charts-unovis-line",
+      //           icon: "heroicons:information-circle",
+      //         },
+      //         {
+      //           title: "Bar",
+      //           href: "/charts-unovis-bar",
+      //           icon: "heroicons:information-circle",
+      //         },
+      //         {
+      //           title: "Area",
+      //           href: "/charts-unovis-area",
+      //           icon: "heroicons:information-circle",
+      //         },
+      //         {
+      //           title: "Scatter",
+      //           href: "/charts-unovis-scatter",
+      //           icon: "heroicons:information-circle",
+      //         },
+      //       ],
+      //     },
+      //   ],
+      // },
+      // {
+      //   title: "Maps",
+      //   icon: Map,
+      //   child: [
+      //     {
+      //       title: "Vector",
+      //       icon: Pointer,
+      //       href: "/maps-vector",
+      //     },
+      //     {
+      //       title: "React Leaflet",
+      //       icon: Map2,
+      //       href: "/map-react-leaflet",
+      //     },
+      //     {
+      //       title: "Unovis Map",
+      //       icon: Map,
+      //       multi_menu: [
+      //         {
+      //           title: "Leaflet Map",
+      //           href: "/map-unovis-leaflet",
+      //         },
+      //         {
+      //           title: "Leaflet Flow",
+      //           href: "/map-unovis-flow",
+      //         },
+      //         {
+      //           title: "Leaflet Advance",
+      //           href: "/map-unovis-advance",
+      //         },
+      //       ],
+      //     },
+      //   ],
+      // },
+      // {
+      //   title: "Icons",
+      //   icon: Icons,
+      //   child: [
+      //     {
+      //       title: "Hero Icons",
+      //       icon: Heroicon,
+      //       href: "/icons-iconify",
+      //     },
+      //     {
+      //       title: "Lucide Icons",
+      //       icon: LucideIcon,
+      //       href: "/icons-lucide",
+      //     },
+      //     {
+      //       title: "Custom Icons",
+      //       icon: CustomIcon,
+      //       href: "/icons-custom",
+      //     },
+      //   ],
+      // },
+      // {
+      //   title: "Multi Level",
+      //   icon: MenuBar,
+      //   child: [
+      //     {
+      //       title: "Level 1.1",
+      //       href: "#",
+      //     },
+      //     {
+      //       title: "Level 2",
+      //       multi_menu: [
+      //         {
+      //           title: "Level 2.1",
+      //           href: "#",
+      //         },
+      //         {
+      //           title: "Level 2.2",
+      //           href: "#",
+      //         },
+      //       ],
+      //     },
+      //   ],
+      // },
     ],
   },
 };
