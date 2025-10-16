@@ -14,6 +14,10 @@ interface User {
   name: string;
   email: string;
   role: string;
+  avatar?: string;
+  completeAddress: string;
+  createdAt: string;
+  phone?: string;
 }
 
 interface AuthContextType {
@@ -39,7 +43,7 @@ const AuthProvider = ({ children }: { children: React.ReactNode }) => {
   } = useGetCurrentUserQuery({
     enabled: !!token && !isAuthRoute,
   });
-
+  console.log("Fetched User:", user);
   const { mutate: logoutMutation } = useLogoutMutation();
 
   useEffect(() => {

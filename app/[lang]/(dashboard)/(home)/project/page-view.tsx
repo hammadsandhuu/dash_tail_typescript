@@ -9,7 +9,6 @@ import WorksNote from "./components/works-note";
 import OverdueTask from "./components/overdue-task";
 import ProjectBudgetBar from "./components/project-budget-bar";
 import UpcomingDeadline from "./components/upcoming-deadlines";
-import RecentActivity from "./components/recent-activity";
 import TopContributer from "./components/top-contributer";
 import ActiveTask from "./components/active-task";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -53,11 +52,16 @@ const ProjectPageView = ({ trans }: ProjectPageViewProps) => {
           <div className="col-span-12">
             <Card>
               <CardHeader className="mb-0 border-none pt-6 pl-7 pb-0 flex-row flex-wrap items-center justify-between gap-4">
-                <CardTitle className="whitespace-nowrap">Report Chart</CardTitle>
+                <CardTitle className="whitespace-nowrap">
+                  Report Chart
+                </CardTitle>
                 <div className="w-[170px]">
                   <Select>
                     <SelectTrigger className="text-default-500 bg-transparent dark:bg-transparent">
-                      <Icon icon="heroicons:calendar-days" className="w-4 h-4" />
+                      <Icon
+                        icon="heroicons:calendar-days"
+                        className="w-4 h-4"
+                      />
                       <SelectValue placeholder="Select Date" />
                     </SelectTrigger>
                     <SelectContent>
@@ -112,9 +116,6 @@ const ProjectPageView = ({ trans }: ProjectPageViewProps) => {
       </div>
 
       <div className="grid grid-cols-12 gap-6">
-        <div className="col-span-12 lg:col-span-6 xl:col-span-5">
-          <RecentActivity />
-        </div>
         <div className="col-span-12 lg:col-span-6 xl:col-span-7">
           <TopContributer />
         </div>
