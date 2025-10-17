@@ -27,8 +27,7 @@ const InvoiceListPage = () => {
             </Button>
         </CardHeader>
         <CardContent className="pt-0 px-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 2xl:grid-cols-5 gap-4">
-            <PromotionalCard />
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-4">
             <InvoiceStats />
           </div>
         </CardContent>

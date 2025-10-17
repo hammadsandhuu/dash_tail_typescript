@@ -17,7 +17,7 @@ import { Button } from "@/components/ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 
-const CollapsibleTable = () => {
+const ProductTable = () => {
   const [collapsedRows, setCollapsedRows] = useState<number[]>([]);
   const toggleRow = (id: number) => {
     if (collapsedRows.includes(id)) {
@@ -138,4 +138,4 @@ const CollapsibleTable = () => {
   );
 };
 
-export default CollapsibleTable;
+export default ProductTable;
