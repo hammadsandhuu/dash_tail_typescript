@@ -408,6 +408,9 @@ importers:
       '@types/d3-shape':
         specifier: ^3.1.7
         version: 3.1.7
+      '@types/dagre':
+        specifier: ^0.7.53
+        version: 0.7.53
       '@types/js-cookie':
         specifier: ^3.0.6
         version: 3.0.6
@@ -9639,8 +9642,6 @@ snapshots:
     dependencies:
       '@ckeditor/ckeditor5-utils': 47.0.0
       es-toolkit: 1.39.5
-    transitivePeerDependencies:
-      - supports-color
 
   '@ckeditor/ckeditor5-enter@40.2.0':
     dependencies:
