@@ -13,8 +13,7 @@ import { cn } from "@/lib/utils";
 import { type Contact as ContactType } from "@/api/chat/data";
 import { type Task as TaskType } from "@/api/tasks/data";
 
-const ViewTask = ({ contacts, tasks }: {
-  contacts: ContactType[],
+const ViewTask = ({ tasks }: {
   tasks: TaskType[],
 }) => {
   const [open, setOpen] = useState<boolean>(false);
@@ -58,9 +57,6 @@ const ViewTask = ({ contacts, tasks }: {
                 + Add Task
               </Button>
             </CardHeader>
-            <CardContent className="h-full p-2 md:px-6">
-              <TaskSidebar contacts={contacts} />
-            </CardContent>
           </Card>
         </div>
 

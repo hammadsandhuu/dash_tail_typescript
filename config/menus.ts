@@ -1858,19 +1858,77 @@ export const menusConfig = {
         icon: DashBoard,
       },
       {
-        isHeader: true,
-        title: "Application",
+        title: "Categories",
+        icon: ClipBoard,
+        child: [
+          {
+            title: "List",
+            href: "#",
+          },
+          {
+            title: "Edit",
+            href: "#",
+          },
+          {
+            title: "Create",
+            href: "#",
+          }
+        ]
+      },
+      {
+        title: "Products",
+        icon: Cart,
+        child: [
+          {
+            title: "List",
+            href: "#",
+          },
+          {
+            title: "Edit",
+            href: "#",
+          },
+          {
+            title: "Create",
+            href: "#",
+          }
+        ]
+      },
+      {
+        title: "Inventory",
+        icon: Cart,
+        child: [
+          {
+            title: "warehouse",
+            href: "#",
+          },
+          {
+            title: "Received Orders",
+            href: "#",
+          },
+        ]
+      },
+      {
+        title: "Invoice",
+        icon: Files,
+        child: [
+          {
+            title: "Create Invoice",
+            href: "/create-invoice",
+          },
+          {
+            title: "Invoice Details",
+            href: "/invoice-details",
+          },
+          {
+            title: "Invoice List",
+            href: "/invoice-list",
+          },
+        ],
       },
 
       {
-        title: "chat",
-        icon: Messages,
-        href: "/chat",
-      },
-      {
-        title: "email",
-        icon: Envelope,
-        href: "/email",
+        isHeader: true,
+        title: "Application",
       },
       {
         title: "kanban",
@@ -1887,13 +1945,6 @@ export const menusConfig = {
         icon: Calendar,
         href: "/calendar",
       },
-
-      {
-        title: "project",
-        icon: ClipBoard,
-        href: "/projects",
-      },
-
       {
         isHeader: true,
         title: "Pages",

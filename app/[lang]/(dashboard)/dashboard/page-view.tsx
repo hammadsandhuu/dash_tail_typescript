@@ -28,7 +28,7 @@ const EcommercePageView = ({ trans }:EcommercePageViewProps) => {
     <div className="space-y-6">
       <div className="flex flex-wrap gap-4 items-center justify-between">
         <div className="text-2xl font-medium text-default-800">
-          Welcome back, {user?.name}!
+          Welcome back, {user?.name || "..."}!
         </div>
         <DatePickerWithRange />
       </div>

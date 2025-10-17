@@ -1,5 +1,3 @@
-import { faker } from "@faker-js/faker";
-
 export const demoBoards = [
   {
     id: "d0f5f951-89b1-4310-8c67-d38a4a44c94e",
