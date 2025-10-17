@@ -3,7 +3,7 @@
 import { cn } from "@/lib/utils";
 import { Icon } from "@iconify/react";
 import ContactList from "./contact-list";
-import { type Contact as ContactType } from "@/app/api/chat/data";
+import { type Contact as ContactType } from "@/api/chat/data";
 const taskFilters = [
   {
     icon: "heroicons:document-text",

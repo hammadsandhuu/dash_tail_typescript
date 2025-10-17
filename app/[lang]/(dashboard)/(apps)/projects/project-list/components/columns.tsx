@@ -16,7 +16,7 @@ import {
 import { Label } from "@/components/ui/label";
 import { Progress } from "@/components/ui/progress";
 import Link from "next/link";
-import { type Project } from "@/app/api/projects/data";
+import { type Project } from "@/api/projects/data";
 
 export const columns: ColumnDef<Project, any>[] = [
   {

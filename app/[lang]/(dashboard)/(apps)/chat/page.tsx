@@ -35,7 +35,7 @@ import ForwardMessage from "./forward-message";
 import ContactInfo from "./contact-info";
 import { useMediaQuery } from "@/hooks/use-media-query";
 import { cn } from "@/lib/utils";
-import { type Contact as ContactType } from "@/app/api/chat/data";
+import { type Contact as ContactType } from "@/api/chat/data";
 const ChatPage = () => {
   const [selectedChatId, setSelectedChatId] = useState<any | null>(null);
   const [showContactSidebar, setShowContactSidebar] = useState<boolean>(false);

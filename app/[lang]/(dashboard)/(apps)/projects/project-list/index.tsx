@@ -15,7 +15,7 @@ import {
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Icon } from "@iconify/react";
-import { type Project } from "@/app/api/projects/data";
+import { type Project } from "@/api/projects/data";
 export default function ProjectList({ data, table, columns }: {
   data: Project[];
   table: any

@@ -10,7 +10,11 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { Undo2 } from "lucide-react";
-import { type ProfileUser as ProfileUser, type Contact as ContactType, type Chat as ChatType } from "@/app/api/chat/data";
+import {
+  type ProfileUser as ProfileUser,
+  type Contact as ContactType,
+  type Chat as ChatType,
+} from "@/api/chat/data";
 import Image from "next/image";
 const chatAction = [
   {

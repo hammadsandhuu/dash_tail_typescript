@@ -39,7 +39,7 @@ import avatar1 from "@/public/images/avatar/avatar-7.jpg";
 import avatar2 from "@/public/images/avatar/avatar-2.jpg";
 import avatar3 from "@/public/images/avatar/avatar-3.jpg";
 import avatar4 from "@/public/images/avatar/avatar-4.jpg";
-import { type Project } from "@/app/api/projects/data";
+import { type Project } from "@/api/projects/data";
 
 const ProjectHeader = ({ project }: { project: Project }) => {
   const data = [

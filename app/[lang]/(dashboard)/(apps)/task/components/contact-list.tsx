@@ -3,7 +3,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import { cn } from "@/lib/utils";
 import { Icon } from "@iconify/react";
-import { type Contact as ContactType } from "@/app/api/chat/data";
+import { type Contact as ContactType } from "@/api/chat/data";
 
 const ContactList = ({ contact }: { contact: ContactType }) => {
   const { avatar, fullName, status, about, unreadmessage, date } =

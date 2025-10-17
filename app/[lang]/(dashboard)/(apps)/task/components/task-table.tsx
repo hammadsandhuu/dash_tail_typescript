@@ -64,7 +64,7 @@ const priorityColors: { [key: string]: any } = {
   low: "destructive",
 };
 import { Menu } from "lucide-react";
-import { type Task as TaskType } from "@/app/api/tasks/data";
+import { type Task as TaskType } from "@/api/tasks/data";
 
 const TaskTable = ({ data, handleEditSheetOpen, handleSidebar }: {
   data: TaskType[],

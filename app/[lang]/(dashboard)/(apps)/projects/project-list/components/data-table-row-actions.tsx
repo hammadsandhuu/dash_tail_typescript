@@ -11,7 +11,7 @@ import {
 
 import { Icon } from "@iconify/react";
 import Link from "next/link";
-import { type Project } from "@/app/api/projects/data";
+import { type Project } from "@/api/projects/data";
 import { Row } from "@tanstack/react-table";
 
 interface DataTableRowActionsProps<TData> {

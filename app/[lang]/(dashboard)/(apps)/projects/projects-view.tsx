@@ -27,7 +27,7 @@ import { DataTableToolbar } from "./project-list/components/data-table-toolbar";
 import Blank from "@/components/blank";
 
 const wait = () => new Promise((resolve) => setTimeout(resolve, 1000));
-import { type Project } from "@/app/api/projects/data";
+import { type Project } from "@/api/projects/data";
 interface ProjectsViewProps {
   projects: Project[];
 }

@@ -10,8 +10,8 @@ import CreateTask from "./components/create-task";
 import EditTask from "./components/edit-task";
 import { useMediaQuery } from "@/hooks/use-media-query";
 import { cn } from "@/lib/utils";
-import { type Contact as ContactType } from "@/app/api/chat/data";
-import { type Task as TaskType } from "@/app/api/tasks/data";
+import { type Contact as ContactType } from "@/api/chat/data";
+import { type Task as TaskType } from "@/api/tasks/data";
 
 const ViewTask = ({ contacts, tasks }: {
   contacts: ContactType[],

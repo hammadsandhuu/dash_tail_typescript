@@ -18,7 +18,7 @@ import ChangeTheme from "./change-theme";
 import BlockUser from "./block-user";
 import MediaSheet from "./media-sheet";
 import { AlertTriangle, FolderClosed, Image } from "lucide-react";
-import { type Contact as ContactType, } from "@/app/api/chat/data";
+import { type Contact as ContactType } from "@/api/chat/data";
 const ContactInfo = ({ handleSetIsOpenSearch, handleShowInfo, contact }: {
   handleSetIsOpenSearch: () => void;
   handleShowInfo: () => void;

@@ -8,7 +8,7 @@ import { Checkbox } from "@/components/ui/checkbox";
 import { Icon } from "@iconify/react";
 import DeleteConfirmationDialog from "@/components/delete-confirmation-dialog";
 import { deleteMailAction } from "./_action";
-import { type Mail } from "@/app/api/email/data";
+import { type Mail } from "@/api/email/data";
 export function MailList({ mail, handleSelectedMail }: {
   mail: Mail;
   handleSelectedMail: (id: any) => void;

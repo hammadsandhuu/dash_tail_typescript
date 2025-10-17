@@ -12,7 +12,7 @@ import { Icon } from "@iconify/react";
 import { InputGroup, InputGroupText } from "@/components/ui/input-group";
 import { Input } from "@/components/ui/input";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { type ProfileUser as ProfileUserType } from "@/app/api/chat/data";
+import { type ProfileUser as ProfileUserType } from "@/api/chat/data";
 const MyProfileHeader = ({ profile }: { profile: ProfileUserType }) => {
   return (
     <>

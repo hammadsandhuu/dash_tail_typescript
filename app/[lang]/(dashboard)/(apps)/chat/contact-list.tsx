@@ -3,7 +3,10 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import { cn, formatTime } from "@/lib/utils";
 import { Icon } from "@iconify/react";
-import { type Contact as ContactType, type Chat as ChatType } from "@/app/api/chat/data";
+import {
+  type Contact as ContactType,
+  type Chat as ChatType,
+} from "@/api/chat/data";
 
 const ContactList = ({ contact, openChat, selectedChatId }: {
   contact: ContactType,

@@ -9,7 +9,7 @@ import img1 from "@/public/images/all-img/email-1.png";
 import img2 from "@/public/images/all-img/email-2.png";
 import img3 from "@/public/images/all-img/email-3.png";
 import Image from "next/image";
-import { Mail } from "@/app/api/email/data";
+import { Mail } from "@/api/email/data";
 
 const images = [img1, img2, img3];
 

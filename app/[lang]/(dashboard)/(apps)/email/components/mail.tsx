@@ -24,7 +24,7 @@ import ContactList from "./contact-list";
 import { Icon } from "@iconify/react";
 import ChatBox from "./chat-box";
 import { useMediaQuery } from "@/hooks/use-media-query";
-import { type Mail } from "@/app/api/email/data";
+import { type Mail } from "@/api/email/data";
 
 interface MailProps {
   accounts: {

@@ -13,7 +13,7 @@ import { Input } from "@/components/ui/input";
 import { Icon } from "@iconify/react";
 import { Button } from "@/components/ui/button";
 import { ScrollArea } from "@/components/ui/scroll-area";
-import { type Contact as ContactType } from "@/app/api/chat/data";
+import { type Contact as ContactType } from "@/api/chat/data";
 const ForwardMessage = ({ open, contacts, setIsOpen }: {
   open: boolean;
   contacts: any;

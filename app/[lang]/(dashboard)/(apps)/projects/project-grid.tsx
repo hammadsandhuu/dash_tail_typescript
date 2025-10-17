@@ -35,7 +35,7 @@ const prioritiesColorMap: { [key: string]: any } = {
   medium: "warning",
 };
 import { useTheme } from "next-themes";
-import { type Project } from "@/app/api/projects/data";
+import { type Project } from "@/api/projects/data";
 interface ProjectGridProps {
   project: Project;
   onEdit: (project: Project) => void;

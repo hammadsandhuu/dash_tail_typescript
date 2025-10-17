@@ -13,7 +13,7 @@ import { Calendar } from "@/components/ui/calendar";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Plus } from "lucide-react";
 import { Checkbox } from "@/components/ui/checkbox";
-import { CalendarEvent, CalendarCategory } from "@/app/api/calendars/data"
+import { CalendarEvent, CalendarCategory } from "@/api/calendars/data";
 import {
   EventApi,
   DateSelectArg,
