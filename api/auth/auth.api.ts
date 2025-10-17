@@ -58,7 +58,6 @@ export async function logoutApi() {
   return data?.data;
 }
 
-// Update user profile
 export async function updateProfileApi(
   input: Record<string, any>
 ): Promise<UpdateProfileResponse> {
@@ -68,11 +67,16 @@ export async function updateProfileApi(
       formData.append(key, value);
     }
   });
+
   for (const [key, value] of formData.entries()) {
     console.log("FormData:", key, value);
   }
 
-  const { data } = await http.patch(API_RESOURCES.USER, formData);
+  const { data } = await http.patch(API_RESOURCES.USER, formData, {
+    headers: {
+      "Content-Type": "multipart/form-data",
+    },
+  });
   return data;
 }
 

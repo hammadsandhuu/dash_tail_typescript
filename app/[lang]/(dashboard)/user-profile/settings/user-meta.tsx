@@ -45,17 +45,17 @@ const UserMeta = () => {
       return;
     }
 
-    const formData = new FormData();
-    formData.append("avatar", selectedFile);
-
-    updateProfile(formData, {
-      onSuccess: () => {
-        toast.success("Avatar uploaded successfully");
-        setSelectedFile(null);
-        setPreviewUrl(null);
-        if (fileInputRef.current) fileInputRef.current.value = "";
-      },
-    });
+    updateProfile(
+      { avatar: selectedFile },
+      {
+        onSuccess: () => {
+          toast.success("Avatar uploaded successfully");
+          setSelectedFile(null);
+          setPreviewUrl(null);
+          if (fileInputRef.current) fileInputRef.current.value = "";
+        },
+      }
+    );
   };
 
   const handleCancel = () => {
