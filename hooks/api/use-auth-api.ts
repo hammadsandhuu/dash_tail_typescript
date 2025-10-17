@@ -1,3 +1,4 @@
+// src/hooks/api/use-auth-api.ts
 "use client";
 
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
@@ -9,6 +10,11 @@ import {
   loginApi,
   getCurrentUserApi,
   logoutApi,
+  updateProfileApi,
+  changePasswordApi,
+  UpdateProfileResponse,
+  ChangePasswordResponse,
+  ChangePasswordInput,
 } from "@/api/auth/auth.api";
 
 /* ============ LOGIN HOOK ============ */
@@ -76,6 +82,43 @@ export const useLogoutMutation = () => {
     onError: (error: any) => {
       const message =
         error?.response?.data?.message || "Logout failed. Please try again.";
+      toast.error(message);
+    },
+  });
+};
+
+/* ============ UPDATE PROFILE HOOK ============ */
+export const useUpdateProfileMutation = () => {
+  const queryClient = useQueryClient();
+
+  return useMutation<UpdateProfileResponse, any, Record<string, any>>({
+    mutationFn: updateProfileApi,
+
+    onSuccess: (data) => {
+      toast.success(data.message || "Profile updated successfully");
+      queryClient.invalidateQueries({ queryKey: ["currentUser"] });
+    },
+
+    onError: (error: any) => {
+      const message =
+        error?.response?.data?.message ||
+        "Something went wrong while updating profile!";
+      toast.error(message);
+    },
+  });
+};
+
+/* ============ CHANGE PASSWORD HOOK ============ */
+export const useChangePasswordMutation = () => {
+  return useMutation<ChangePasswordResponse, any, ChangePasswordInput>({
+    mutationFn: changePasswordApi,
+    onSuccess: (data) => {
+      toast.success(data.message || "Password changed successfully");
+    },
+    onError: (error: any) => {
+      const message =
+        error?.response?.data?.message ||
+        "Something went wrong while changing password!";
       toast.error(message);
     },
   });

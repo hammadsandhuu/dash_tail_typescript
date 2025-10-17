@@ -10,6 +10,8 @@ import {
 import { usePathname, useRouter } from "next/navigation";
 
 interface User {
+  dateOfBirth: any;
+  gender: string;
   id: string;
   name: string;
   email: string;
@@ -43,7 +45,6 @@ const AuthProvider = ({ children }: { children: React.ReactNode }) => {
   } = useGetCurrentUserQuery({
     enabled: !!token && !isAuthRoute,
   });
-  console.log("Fetched User:", user);
   const { mutate: logoutMutation } = useLogoutMutation();
 
   useEffect(() => {

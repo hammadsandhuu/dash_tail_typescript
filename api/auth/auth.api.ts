@@ -10,6 +10,34 @@ export interface LoginResponse {
   message?: string;
 }
 
+export interface UpdateProfileInput {
+  name?: string;
+  email?: string;
+  phone?: string;
+  completeAddress?: string;
+  avatar?: string;
+}
+
+export interface UpdateProfileResponse {
+  success: boolean;
+  message: string;
+  data: {
+    user: any;
+  };
+}
+
+export interface ChangePasswordInput {
+  currentPassword: string;
+  newPassword: string;
+  confirmPassword: string;
+}
+
+export interface ChangePasswordResponse {
+  success: boolean;
+  message: string;
+}
+
+
 /* ============ AUTH APIs ============ */
 
 // Login API
@@ -28,4 +56,30 @@ export async function getCurrentUserApi() {
 export async function logoutApi() {
   const { data } = await http.get(API_RESOURCES.LOGOUT);
   return data?.data;
+}
+
+// Update user profile
+export async function updateProfileApi(
+  input: Record<string, any>
+): Promise<UpdateProfileResponse> {
+  const formData = new FormData();
+  Object.entries(input).forEach(([key, value]) => {
+    if (value !== undefined && value !== null) {
+      formData.append(key, value);
+    }
+  });
+  for (const [key, value] of formData.entries()) {
+    console.log("FormData:", key, value);
+  }
+
+  const { data } = await http.patch(API_RESOURCES.USER, formData);
+  return data;
+}
+
+// Change password
+export async function changePasswordApi(
+  input: ChangePasswordInput
+): Promise<ChangePasswordResponse> {
+  const { data } = await http.patch(API_RESOURCES.CHANGE_PASSWORD, input);
+  return data;
 }

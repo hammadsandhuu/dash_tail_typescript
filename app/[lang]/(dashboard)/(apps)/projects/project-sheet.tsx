@@ -62,7 +62,7 @@ import {
 } from "@/components/ui/popover";
 import { Calendar } from "@/components/ui/calendar";
 const wait = () => new Promise((resolve) => setTimeout(resolve, 1000));
-import { type Project } from "@/app/api/projects/data";
+import { type Project } from "@/api/projects/data";
 
 const OptionComponent = ({ data, ...props }: any) => {
   //const Icon = data.icon;
