@@ -417,6 +417,9 @@ importers:
       '@types/jsonwebtoken':
         specifier: ^9.0.10
         version: 9.0.10
+      '@types/leaflet':
+        specifier: ^1.9.21
+        version: 1.9.21
       '@types/next':
         specifier: ^9.0.0
         version: 9.0.0(@babel/core@7.24.5)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(sass@1.93.2)
@@ -3864,6 +3867,9 @@ packages:
 
   '@types/leaflet@1.7.6':
     resolution: {integrity: sha512-Emkz3V08QnlelSbpT46OEAx+TBZYTOX2r1yM7W+hWg5+djHtQ1GbEXBDRLaqQDOYcDI51Ss0ayoqoKD4CtLUDA==}
+
+  '@types/leaflet@1.9.21':
+    resolution: {integrity: sha512-TbAd9DaPGSnzp6QvtYngntMZgcRk+igFELwR2N99XZn7RXUdKgsXMR+28bUO0rPsWp8MIu/f47luLIQuSLYv/w==}
 
   '@types/mapbox__point-geometry@0.1.4':
     resolution: {integrity: sha512-mUWlSxAmYLfwnRBmgYV86tgYmMIICX4kza8YnE/eIlywGe2XoOxlpVnXWwir92xRLjwyarqwpu2EJKD2pk0IUA==}
@@ -9642,6 +9648,8 @@ snapshots:
     dependencies:
       '@ckeditor/ckeditor5-utils': 47.0.0
       es-toolkit: 1.39.5
+    transitivePeerDependencies:
+      - supports-color
 
   '@ckeditor/ckeditor5-enter@40.2.0':
     dependencies:
@@ -12746,6 +12754,10 @@ snapshots:
   '@types/katex@0.16.7': {}
 
   '@types/leaflet@1.7.6':
+    dependencies:
+      '@types/geojson': 7946.0.16
+
+  '@types/leaflet@1.9.21':
     dependencies:
       '@types/geojson': 7946.0.16
 
