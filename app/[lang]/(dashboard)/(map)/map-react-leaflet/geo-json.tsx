@@ -33,7 +33,7 @@ const GeoJSONMap = ({ height = 350 }: { height?: number }) => {
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
             />
             <GeoJSON data={seg as FeatureCollection<Geometry, any>} style={setColor} />
-            <GeoJSON data={ecomp as FeatureCollection<Geometry, any>} pointToLayer={setIcon} />
+            <GeoJSON data={ecomp as FeatureCollection<Geometry, any>} style={setColor} />
         </MapContainer>
 
     );
