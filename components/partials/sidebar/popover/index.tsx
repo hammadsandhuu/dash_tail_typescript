@@ -17,6 +17,7 @@ const PopoverSidebar = ({ trans }: { trans: string }) => {
   const { collapsed, sidebarBg } = useSidebar();
   const { layout, isRtl } = useThemeStore();
   const menus = menusConfig?.sidebarNav?.classic || [];
+  console.log("menus in popover sidebar:", menus);
   const [activeSubmenu, setActiveSubmenu] = useState<number | null>(null);
   const [activeMultiMenu, setMultiMenu] = useState<number | null>(null);
 

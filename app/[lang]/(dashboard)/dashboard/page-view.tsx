@@ -16,17 +16,19 @@ import TopSell from "./components/top-sell";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import DashboardDropdown from "@/components/dashboard-dropdown";
 import DatePickerWithRange from "@/components/date-picker-with-range";
+import { useAuth } from "@/provider/auth.provider";
 interface EcommercePageViewProps {
   trans: {
     [key: string]: string;
   };
 }
 const EcommercePageView = ({ trans }:EcommercePageViewProps) => {
+  const {user} = useAuth()
   return (
     <div className="space-y-6">
       <div className="flex flex-wrap gap-4 items-center justify-between">
         <div className="text-2xl font-medium text-default-800">
-          Ecommerce Dashboard
+          Welcome back, {user?.name}!
         </div>
         <DatePickerWithRange />
       </div>

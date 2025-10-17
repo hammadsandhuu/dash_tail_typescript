@@ -834,19 +834,9 @@ export const menusConfig = {
         icon: DashBoard,
         child: [
           {
-            title: "Analytics",
-            href: "/dashboard",
-            icon: Graph,
-          },
-          {
             title: "Ecommerce",
             href: "/ecommerce",
             icon: Cart,
-          },
-          {
-            title: "project ",
-            href: "/project",
-            icon: ClipBoard,
           },
         ],
       },
@@ -1860,35 +1850,18 @@ export const menusConfig = {
     classic: [
       {
         isHeader: true,
-        title: "menu",
+        title: "GENERAL",
       },
       {
         title: "Dashboard",
-        icon: DashBoard,
         href: "/dashboard",
-
-        child: [
-          {
-            title: "Analytics",
-            href: "/dashboard",
-            icon: Graph,
-          },
-          {
-            title: "Ecommerce",
-            href: "/ecommerce",
-            icon: Cart,
-          },
-          {
-            title: "Project ",
-            href: "/project",
-            icon: ClipBoard,
-          },
-        ],
+        icon: DashBoard,
       },
       {
         isHeader: true,
         title: "Application",
       },
+
       {
         title: "chat",
         icon: Messages,
