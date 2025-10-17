@@ -405,6 +405,9 @@ importers:
       '@svgr/webpack':
         specifier: ^8.1.0
         version: 8.1.0(typescript@5.9.3)
+      '@types/d3-shape':
+        specifier: ^3.1.7
+        version: 3.1.7
       '@types/js-cookie':
         specifier: ^3.0.6
         version: 3.0.6
@@ -9567,8 +9570,6 @@ snapshots:
       '@ckeditor/ckeditor5-utils': 47.0.0
       ckeditor5: 47.0.0
       es-toolkit: 1.39.5
-    transitivePeerDependencies:
-      - supports-color
 
   '@ckeditor/ckeditor5-editor-classic@40.2.0':
     dependencies:
@@ -9603,8 +9604,6 @@ snapshots:
       '@ckeditor/ckeditor5-utils': 47.0.0
       ckeditor5: 47.0.0
       es-toolkit: 1.39.5
-    transitivePeerDependencies:
-      - supports-color
 
   '@ckeditor/ckeditor5-editor-multi-root@47.0.0':
     dependencies:
@@ -9640,6 +9639,8 @@ snapshots:
     dependencies:
       '@ckeditor/ckeditor5-utils': 47.0.0
       es-toolkit: 1.39.5
+    transitivePeerDependencies:
+      - supports-color
 
   '@ckeditor/ckeditor5-enter@40.2.0':
     dependencies:
@@ -9736,8 +9737,6 @@ snapshots:
       '@ckeditor/ckeditor5-utils': 47.0.0
       '@ckeditor/ckeditor5-widget': 47.0.0
       ckeditor5: 47.0.0
-    transitivePeerDependencies:
-      - supports-color
 
   '@ckeditor/ckeditor5-html-embed@47.0.0':
     dependencies:
@@ -10021,8 +10020,6 @@ snapshots:
       '@ckeditor/ckeditor5-ui': 47.0.0
       '@ckeditor/ckeditor5-utils': 47.0.0
       ckeditor5: 47.0.0
-    transitivePeerDependencies:
-      - supports-color
 
   '@ckeditor/ckeditor5-special-characters@47.0.0':
     dependencies:
