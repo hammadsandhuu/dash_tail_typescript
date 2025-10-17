@@ -29,14 +29,13 @@ ChartJS.register(
   PointElement
 );
 
-const customTooltip = (tooltipItems: TooltipItem<'line'>[]) => {
-  let sum = 0;
-
-  tooltipItems.forEach(function (tooltipItem) {
-    sum += tooltipItem.parsed.y;
-  });
-  return "Sum: " + sum;
-};
+const customTooltip = (tooltipItems: TooltipItem<"line">[]) =>
+  "Sum: " +
+  tooltipItems.reduce(
+    (sum, item) =>
+      sum + (typeof item.parsed?.y === "number" ? item.parsed.y : 0),
+    0
+  );
 
 const PositionTooltip = ({ height = 350 }) => {
   const { theme: config, setTheme: setConfig } = useThemeStore();
