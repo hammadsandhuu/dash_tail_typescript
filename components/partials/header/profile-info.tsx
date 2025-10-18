@@ -16,16 +16,11 @@ import {
 } from "@/components/ui/dropdown-menu";
 import {
   User,
-  Megaphone,
   Settings,
-  Keyboard,
   Users,
   UserPlus,
-  Phone,
   LogOut,
-  Github,
 } from "lucide-react";
-import Image from "next/image";
 import Link from "next/link";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { useAuth } from "@/provider/auth.provider";

@@ -10,4 +10,15 @@ export const API_RESOURCES = {
   FORGOT_PASSWORD: `${BASE_URL}/auth/forgot-password`,
   RESET_PASSWORD: `${BASE_URL}/auth/reset-password`,
   UPDATE_PROFILE: `${BASE_URL}/auth/update-profile`,
+
+  // Products & Categories
+  CATEGORIES: `${BASE_URL}/api/v1/categories`,
+  PRODUCTS: `${BASE_URL}/api/v1/products`,
+  PRODUCTS_BY_CATEGORIES: `${BASE_URL}/api/v1/products/category`,
+  PRODUCTS_BY_SUB_CATEGORIES: `${BASE_URL}/api/v1/products/categories`,
+  NEW_SELLER_PRODUCTS: `${BASE_URL}/api/v1/products/new-arrival`,
+  BEST_SELLER_PRODUCTS: `${BASE_URL}/api/v1/products/best-seller`,
+  POPULAR_PRODUCTS: `${BASE_URL}/api/v1/products/deals`,
+  SALE_PRODUCTS: `${BASE_URL}/api/v1/products/on-sale`,
+  RELATED_PRODUCTS: `${BASE_URL}/api/v1/products`,
 };
