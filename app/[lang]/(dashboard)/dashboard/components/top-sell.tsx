@@ -1,13 +1,17 @@
+"use client";
 
-"use client"
-import img1 from "@/public/images/home/img-1.png"
-import img2 from "@/public/images/home/img-2.png"
-import img3 from "@/public/images/home/img-3.png"
-import img4 from "@/public/images/home/img-4.png"
-import img5 from "@/public/images/home/img-5.png"
-import img6 from "@/public/images/home/img-6.png"
-import Image, { StaticImageData } from "next/image"
-import { Fragment } from "react"
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { ScrollArea } from "@/components/ui/scroll-area";
+import DashboardDropdown from "@/components/dashboard-dropdown";
+import TableList from "@/components/DataTable/table-list";
+import { StaticImageData } from "next/image";
+
+import img1 from "@/public/images/home/img-1.png";
+import img2 from "@/public/images/home/img-2.png";
+import img3 from "@/public/images/home/img-3.png";
+import img4 from "@/public/images/home/img-4.png";
+import img5 from "@/public/images/home/img-5.png";
+import img6 from "@/public/images/home/img-6.png";
 
 type DataItem = {
   id: number;
@@ -18,112 +22,52 @@ type DataItem = {
 };
 
 const data: DataItem[] = [
-  {
-    id: 1,
-    name: "Apple red watch",
-    price: "369.36",
-    totalsales: "936",
-    image: img1
-  },
-  {
-    id: 2,
-    name: "Apple red watch",
-    price: "369.36",
-    totalsales: "936",
-    image: img2
-  },
-  {
-    id: 3,
-    name: "Apple red watch",
-    price: "369.36",
-    totalsales: "936",
-    image: img3
-  },
-  {
-    id: 4,
-    name: "Apple red watch",
-    price: "369.36",
-    totalsales: "936",
-    image: img4
-  },
-  {
-    id: 5,
-    name: "Apple red watch",
-    price: "369.36",
-    totalsales: "936",
-    image: img5
-  },
-  {
-    id: 6,
-    name: "Apple red watch",
-    price: "369.36",
-    totalsales: "936",
-    image: img6
-  },
-  {
-    id: 7,
-    name: "Apple red watch",
-    price: "369.36",
-    totalsales: "936",
-    image: img6
-  },
-  {
-    id: 8,
-    name: "Apple red watch",
-    price: "369.36",
-    totalsales: "936",
-    image: img4
-  },
-  {
-    id: 9,
-    name: "Apple red watch",
-    price: "369.36",
-    totalsales: "936",
-    image: img5
-  },
-  {
-    id: 10,
-    name: "Apple red watch",
-    price: "369.36",
-    totalsales: "936",
-    image: img6
-  },
-  {
-    id: 11,
-    name: "Apple red watch",
-    price: "369.36",
-    totalsales: "936",
-    image: img6
-  }
-]
+  { id: 1, name: "Apple red watch", price: "369.36", totalsales: "936", image: img1 },
+  { id: 2, name: "Samsung Galaxy Buds", price: "249.99", totalsales: "825", image: img2 },
+  { id: 3, name: "Sony Headphones", price: "199.99", totalsales: "760", image: img3 },
+  { id: 4, name: "Apple AirPods Pro", price: "279.00", totalsales: "705", image: img4 },
+  { id: 5, name: "Beats Studio 3", price: "349.99", totalsales: "653", image: img5 },
+  { id: 6, name: "Fitbit Versa 4", price: "229.00", totalsales: "640", image: img6 },
+  { id: 7, name: "Garmin Smartwatch", price: "499.00", totalsales: "612", image: img4 },
+  { id: 8, name: "Bose QC 45", price: "329.00", totalsales: "590", image: img5 },
+  { id: 9, name: "OnePlus Buds 2", price: "159.00", totalsales: "540", image: img6 },
+  { id: 10, name: "Apple Watch SE", price: "279.00", totalsales: "520", image: img3 },
+  { id: 11, name: "Xiaomi Smart Band", price: "49.00", totalsales: "480", image: img2 },
+];
+
 const TopSell = () => {
   return (
-    <Fragment>
-      {
-        data.map((item, index) => (
-          <li
-            className="flex justify-between items-center gap-2 border-b border-default-300 py-3 px-6 hover:bg-default-50"
-            key={`top-sell-${index}`}
-          >
-            <div className="flex items-center gap-3">
-              <div className="h-10 w-10 rounded-md">
-                <Image
-                  src={item.image}
-                  alt=""
-                  className="h-full w-full object-cover rounded-md"
-                />
-              </div>
-              <div className="flex flex-col gap-1">
-                <span className="text-sm font-medium text-default-700"> {item.name}</span>
-                <span className="text-xs font-medium text-default-600">${item.price}</span>
-              </div>
-            </div>
-            <span className="text-xs text-default-600">{item.totalsales} sales</span>
-          </li>
-        ))
-      }
+    <Card>
+      {/* --- Header --- */}
+      <CardHeader className="border-none flex-row mb-0">
+        <div className="flex-1 pt-2">
+          <CardTitle>Top Selling Products</CardTitle>
+          <span className="block text-sm text-default-600 mt-2">
+            Total {data.length} items
+          </span>
+        </div>
+        <DashboardDropdown />
+      </CardHeader>
 
-    </Fragment>
+      {/* --- TableList --- */}
+      <CardContent className="p-0 pb-4">
+        <div className="h-[495px]">
+          <ScrollArea className="h-full">
+            <TableList
+              data={data.map((item) => ({
+                id: item.id,
+                image: item.image.src,
+                title: item.name,
+                subtitle: `$${item.price}`,
+                value: `${item.totalsales} sales`,
+                link: "#",
+              }))}
+              hoverEffect
+            />
+          </ScrollArea>
+        </div>
+      </CardContent>
+    </Card>
   );
 };
 

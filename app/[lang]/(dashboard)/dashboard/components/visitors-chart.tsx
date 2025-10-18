@@ -6,7 +6,7 @@ import { useTheme } from "next-themes";
 import { themes } from "@/config/thems";
 import { getYAxisConfig, getLabel } from "@/lib/appex-chart-options";
 
-const VisitorsReportChart = ({ height = 300 }) => {
+const VisitorsReportChart = ({ height = 390 }) => {
   const { theme: config, setTheme: setConfig } = useThemeStore();
   const { theme: mode } = useTheme();
   const theme = themes.find((theme) => theme.name === config);

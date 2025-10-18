@@ -12,7 +12,7 @@ import {
 } from "@/components/ui/dropdown-menu";
 const CustomerStatistics = () => {
   return (
-    <Card className="py-2.5">
+    <Card>
       <CardHeader className="flex-row items-center justify-between gap-4 border-none pb-0 ">
         <CardTitle>Customer Statistics</CardTitle>
         <DropdownMenu>
@@ -36,7 +36,7 @@ const CustomerStatistics = () => {
           </DropdownMenuContent>
         </DropdownMenu>
       </CardHeader>
-      <CardContent className="px-0 pb-8">
+      <CardContent className="px-0">
         <StatsChart />
       </CardContent>
     </Card>
